@@ -1,0 +1,54 @@
+{
+  "name": "tiki-taka",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "analyze": "nuxt build --analyze",
+    "start": "nuxt start --hostname 0.0.0.0",
+    "test": "jest"
+  },
+  "resolutions": {
+    "@nuxtjs/vuetify/**/sass": "1.32.12"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "5.13.6",
+    "@nuxtjs/dayjs": "^1.4.0",
+    "@nuxtjs/pwa": "^3.3.4",
+    "core-js": "^3.8.2",
+    "js-cookie": "^3.0.0",
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.20.0",
+    "nuxt-webfontloader": "^1.1.0",
+    "vue-mailchimp-subscribe": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "@vue/test-utils": "^1.1.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-pug": "^1.2.3",
+    "eslint-plugin-vue": "^7.5.0",
+    "eslint-webpack-plugin": "^2.4.3",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "~1.32.12",
+    "sass-loader": "^10",
+    "style-resources-loader": "^1.4.1",
+    "vue-jest": "^3.0.4"
+  }
+}

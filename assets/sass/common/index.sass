@@ -1,0 +1,64 @@
+//
+// forms //
+//
+form.v-form > .fancy-form
+  overflow: hidden
+  border-radius: 0.625rem
+  .v-list-item__icon
+    margin-right: 0.563rem
+    .icon-tabler
+      color: var(--v-primary-base)
+
+.store-between
+  @media #{map-get($display-breakpoints, 'lg-and-up')}
+    padding: 16rem 0
+  
+  @media screen and (min-width: 3067px)
+    padding: 23rem 0
+
+  @media #{map-get($display-breakpoints, 'lg-and-down')}
+    padding: 7.5rem 0
+
+  @media #{map-get($display-breakpoints, 'md-and-down')}
+    padding: 2rem 0
+
+.rounded-div
+  font-size: 0.95rem !important
+  padding-right: 3.1rem
+  padding-left: 1.1rem
+  height: 3.4rem
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 3px solid var(--v-primary-base)
+  color: var(--v-primary-base)
+  border-radius: 10rem
+  margin-right: 1rem
+  margin-left: 1rem
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    background-image: url('~assets/img/icons/check.png')
+    height: 2.1rem
+    width: 2.1rem
+    right: 0.5rem
+    margin: 0
+    background-size: contain
+
+.v-input
+  position: absolute
+  width: 500px
+  right: 10px
+
+  @media #{map-get($display-breakpoints, 'md-and-down')}
+    width: 350px
+
+  @media #{map-get($display-breakpoints, 'sm-and-down')}
+    width: calc(100vw - 30px) !important
+    right: 50%
+    transform: translateX(50%)
+
+.v-card
+  @media #{map-get($display-breakpoints, 'sm-and-down')}
+    margin-bottom: 5.1rem

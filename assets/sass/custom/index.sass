@@ -1,0 +1,48 @@
+.product-img
+  @media #{map-get($display-breakpoints, 'sm-and-down')}
+    width: 100%
+
+  @media #{map-get($display-breakpoints, 'md-only')}
+    width: 90%
+
+  @media #{map-get($display-breakpoints, 'lg-only')}
+    width: 80%
+
+  @media #{map-get($display-breakpoints, 'xl-only')}
+    width: 60%
+
+.home-video
+  margin: auto
+  @media #{map-get($display-breakpoints, 'sm-and-down')}
+    width: 80%
+    height: 40vw
+  
+  @media #{map-get($display-breakpoints, 'xs-only')}
+    width: 100%
+    height: 100vw
+
+  @media #{map-get($display-breakpoints, 'md-only')}
+    width: 67%
+    height: 35vw
+
+  @media #{map-get($display-breakpoints, 'lg-and-up')}
+    width: 60%
+    height: 30vw
+
+
+::-webkit-scrollbar
+  width: 4px
+/* Track */
+::-webkit-scrollbar-track
+  background: transparent
+  transition: 0.5s ease
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: rgba(black, .2)
+  border-radius: 50px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: rgba(black, .4)
+  border-radius: 50px

@@ -1,0 +1,129 @@
+//
+// Remove vuetify ripple //
+//
+.v-ripple__container
+   display: none !important
+
+//
+// Buttons //
+//
+.v-btn
+   span
+      text-transform: capitalize
+   &:not(.shadow-1):not(.shadow-2):not(.shadow-3):not(.shadow-4):not(.shadow)
+      box-shadow: none !important
+   &:not(.v-btn--icon) .icon-tabler
+      margin-right: -5px
+
+   &.no-back::after
+      display: none !important
+
+   &:not(.v-btn--rounded):not(.main-form):not(.v-btn--icon):not(.btn-card):not(.quickview)
+      border-radius: 6px !important
+
+   &:not(.uncolored):not(.primary)
+      span.v-btn__content
+         text-transform: capitalize !important
+         color: var(--v-primary-base) !important
+
+   &.v-btn--outlined
+      border-width: 3px !important
+   &.wide
+      display: block
+      width: 100%
+      max-width: 280px !important
+      margin-right: auto
+      margin-left: auto
+   &.wide-full
+      max-width: 100% !important
+   &.main-form
+      position: relative
+      border-radius: 50px
+      background-color: transparent
+      span
+         padding-right: 19px
+      &.boldy span
+         font-weight: 900 !important
+         font-size: 1.3rem !important
+      .icon-tabler, .v-icon
+         width: 26px
+         height: 26px
+         position: absolute
+         right: -5px
+         stroke-width: 1.5px
+      .icon-img
+         position: absolute
+      .v-icon, .icon-img
+         right: -12px
+         border-radius: 50px
+   &.v-size--x-large, .v-size--large
+      span
+         font-size: 0.75rem !important
+         padding-right: 1.5rem !important
+      .v-icon
+         height: 25px
+         width: 25px
+         border-radius: 50%
+         color: white !important
+         background-color: var(--v-primary-base) !important
+         margin-right: -0.6rem
+         margin-left: 0.8rem
+      &.v-btn--block
+         position: relative
+         .v-icon
+            position: absolute
+            right: -0.58rem
+            margin: 0
+
+//
+// Text fileds //
+//
+.v-text-field:not(.new-form)
+   & > .v-input__control > .v-input__slot
+      background-color: transparent !important
+      &:before
+         border: none !important
+
+   &.v-input--is-focused > .v-input__control > .v-input__slot:after
+      display: none !important
+
+   // main form
+   &.main-form
+      .v-input__slot
+         border-radius: 50px
+         border: 3px solid var(--v-anchor-base)
+         .v-input__prepend-inner
+            .icon-tabler
+               color: var(--v-anchor-base)
+               margin-top: -3px
+               margin-right: 8px
+
+// Edit the textfields (this will apply only with filled prop)
+.v-text-field--filled
+   border-radius: 5px !important
+.v-btn.v-btn--disabled .v-icon::before
+   color: white !important
+.theme--light.v-btn.v-btn--disabled
+   opacity: .5 !important
+   color: white !important
+   border-color: var(--v-primary-base) !important
+   .v-icon
+      color: white !important
+//
+// Override vuetify elements shadow //
+//
+.v-menu__content
+   @extend .shadow-2
+
+.outlined-v-chip
+   box-shadow: 0px 0px 0px 2px var(--v-primary-base) inset
+   box-sizing: border-box
+   background-color: transparent !important
+
+.transparent-chip
+   background-color: transparent !important
+.v-input--selection-controls__ripple
+   display: none !important
+
+.v-input.elevation-0 .v-input__slot
+   box-shadow: none !important
